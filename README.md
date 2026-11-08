@@ -7,7 +7,7 @@
 ![LLM](https://img.shields.io/badge/model-Qwen2.5--3B--Instruct-orange.svg)
 ![License](https://img.shields.io/badge/license-MIT-lightgrey.svg)
 
-A clean, production-ready, step-by-step implementation of a fully local Retrieval-Augmented Generation (**RAG**) pipeline. Designed to run seamlessly inside Google Colab (T4 GPU), this project demonstrates how to ingest, index, query, and evaluate custom documents using open-source models without relying on third-party serverless API calls.
+A clean step-by-step implementation of a fully local Retrieval-Augmented Generation (**RAG**) pipeline. Designed to run seamlessly inside Google Colab (T4 GPU), this project demonstrates how to ingest, index, query, and evaluate custom documents using open-source models without relying on third-party serverless API calls.
 
 ---
 
@@ -23,9 +23,9 @@ A clean, production-ready, step-by-step implementation of a fully local Retrieva
 
 ## 🚀 Key Features
 
-1. **100% Local Pipeline:** Operates entirely locally on a free Colab T4 GPU, eliminating external API routing errors and rate limits.
+1. **100% Local Pipeline:** Operates entirely locally on a free Colab T4 GPU, eliminating external API routing errors.
 2. **Semantic Chunking:** Leverages `RecursiveCharacterTextSplitter` to preserve contextual boundaries.
-3. **Optimized 4-Bit Inference:** Loads `Qwen2.5-3B-Instruct` in 4-bit precision (`nf4`), reducing VRAM footprint to under 4 GB with minimal performance loss.
+3. **Optimized 4-Bit Inference:** Loads `Qwen2.5-3B-Instruct` in 4-bit precision (`nf4`).
 4. **Strict Grounding:** Enforces strict anti-hallucination prompts paired with source citations for full transparency.
 5. **Dynamic Evaluation (LLM-as-a-Judge):** Includes a reference-free evaluator auditing outputs on-the-fly for **Faithfulness** and **Answer Relevance**.
 
